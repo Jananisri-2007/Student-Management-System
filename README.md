@@ -1,74 +1,153 @@
-# Student-Management-System
-##Task  Description:-
-                             The Student Management System is a console-based application developed in C++. It helps manage student records efficiently using file handling. The system allows users to add, display, search, update, and delete student records.
-                             All student information is stored permanently in a file, making the data available even after the program is closed.
+# Student Management System
+The Student Management System is a console-based application developed in C++. It allows users to manage student records efficiently using file handling. The application provides functionalities to add, display, search, update, and delete student records.
 
+Student data is stored permanently in a binary file (`students.dat`), ensuring that records remain available even after the program is closed.
 
-##Features:-
-•	Add new student records
-•	Display all student records
-•	Search student by Roll Number
-•	Update existing student details
-•	Delete student records
-•	Store records permanently using file handling
-•	Menu-driven user interface
+---
 
+## Features
 
-##Student Information Stored:-
-         The system stores the following details:
-•	Roll Number
-•	Student Name
-•	Father Name
-•	Mother Name
-•	Mobile Number
-•	Marks
+* Add new student records
+* Display all student records
+* Search student by Roll Number
+* Update existing student information
+* Delete student records
+* Permanent data storage using file handling
+* Menu-driven interface
 
-##Concept Used:-
-•	Programming Language: C++
-•	Concepts:
-o	Classes and Objects
-o	Functions
-o	File Handling
-o	Binary Files
-o	Menu-Driven Programming
+---
 
-##Files Used:-
-•	students.txt :-      Stores all student records permanently in binary format.
-•	temp.dat :-    Temporary file used while deleting records.
+## Student Details Stored
 
-##Functions Used :-
-•	addStudent() :- Adds a new student record to the file.
-•	displayStudents() :-  Displays all student records stored in the file.
-•	searchStudent():-   Searches for a student using the Roll Number.
-•	updateStudent() :-  Updates the details of an existing student.
-•	deleteStudent() :- Deletes a student record from the file.
+Each student record contains:
 
-##Program Flow :-
-o	User selects an option from the menu.
-o	Program performs the selected operation.
-o	Data is stored or retrieved from the file.
-o	Menu is displayed again until the user exits.
+* Roll Number
+* Student Name
+* Father Name
+* Mother Name
+* Mobile Number
+* Marks
 
-##Menu Options :-
-•	Add Student
-•	Display All Students
-•	Search Student
-•	Update Student
-•	Delete Student
-•	Exit
+---
 
-##Sample Record :-
-             Roll Number : 1
-             Student Name : S.Aakash
-             Father Name : R.Moorthi
-             Mother Name : S.Kala
-             Mobile Number : 8680890821
-              Marks : 97
+## Technologies Used
 
+* C++
+* Object-Oriented Programming (OOP)
+* File Handling
+* Classes and Objects
+* Functions
+* Binary Files
 
-#Conclusion :-
-                         The Student Management System is a simple and effective application that demonstrates the use of object-oriented programming and file handling in C++. It provides an easy way to manage student records 
+---
 
+## File Structure
+
+```text
+StudentManagementSystem/
+│
+├── student_management.cpp
+├── students.dat
+├── temp.dat
+└── README.md
+```
+
+### File Description
+
+| File                   | Description                         |
+| ---------------------- | ----------------------------------- |
+| student_management.cpp | Source code of the project          |
+| students.dat           | Stores student records permanently  |
+| temp.dat               | Temporary file used during deletion |
+| README.md              | Project documentation               |
+
+---
+
+## Program Menu
+
+```text
+========== STUDENT MANAGEMENT SYSTEM ==========
+1. Add Student
+2. Display All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+```
+
+---
+
+## Functions Used
+
+### addStudent()
+
+Adds a new student record and saves it to the file.
+
+### displayStudents()
+
+Displays all student records stored in the file.
+
+### searchStudent()
+
+Searches for a student using the Roll Number.
+
+### updateStudent()
+
+Updates the details of an existing student.
+
+### deleteStudent()
+
+Deletes a student record from the file.
+
+---
+
+## Sample Input
+
+```text
+Enter Roll Number: 1
+Enter Student Name: S.Aakash
+Enter Father Name: R.Moorthi
+Enter Mother Name: S.Vani
+Enter Mobile Number: 8680890821
+Enter Marks: 97
+```
+
+---
+
+## Sample Output
+
+```text
+RollNo    Name                Father              Mother              Mobile         Marks
+1      S.Aakash              R.Moorthi            S.Vani              8680890821      97
+```
+
+---
+
+## How to Compile
+
+Using GCC Compiler:
+
+```bash
+g++ student_management.cpp -o student
+```
+
+---
+
+## How to Run
+
+### Windows
+
+```bash
+student.exe
+```
+
+### Linux / macOS
+
+```bash
+./student
+```
+
+---
 
 
 
